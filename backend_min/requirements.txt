@@ -1,18 +1,20 @@
-# Web 框架
-flask==3.1.2
-flask-cors==6.0.1
+# Web framework
+flask==2.3.3
+flask-cors==4.0.0
 gunicorn==23.0.0
-uvicorn==0.35.0
+uvicorn==0.27.1
 
-# 数据处理
-pandas==2.0.3
+# Data science stack
 numpy==1.24.4
-python-dateutil==2.8.2
+pandas==2.0.3
 pandas-ta==0.3.14b0
+python-dateutil==2.8.2
+tqdm==4.67.1
 
-# 交易所/行情
+# Exchange API
 ccxt==4.4.48
 requests==2.31.0
 
-# 其他工具
-tqdm==4.67.1
+# Misc utils
+typing-extensions==4.7.1
+
