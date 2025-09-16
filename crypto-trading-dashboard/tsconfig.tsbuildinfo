@@ -1,0 +1,1 @@
+{"root":["./src/corr_frontonly.ts","./src/main.ts","./src/mine.ts","./src/vite-env.d.ts","./src/hooks/usefactorindex.ts","./src/hooks/usefactorsdata.ts","./src/sim/store.ts","./src/sim/types.ts","./src/sim/ui.ts","./src/types/radarsnapshot.ts","./src/utils/filtering.ts","./src/utils/signal-id.ts"],"errors":true,"version":"5.6.3"}
