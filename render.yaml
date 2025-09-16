@@ -2,10 +2,15 @@ services:
   - type: web
     name: laogongvine888
     env: python
-    plan: free
     runtime: python3.11
-    buildCommand: pip install -r requirements.txt
-    startCommand: python backend_min/api_server.py
-
-
-
+    region: frankfurt
+    plan: free
+    buildCommand: "python -m pip install --upgrade pip setuptools wheel build && python -m pip install -r requirements.txt"
+    startCommand: "cd backend_min && gunicorn -w 2 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT api_server:app"
+    envVars:
+      - key: USE_REAL_BINANCE_DATA
+        value: "true"
+      - key: EXCHANGE_NAME
+        value: "binance"
+      - key: RELAX_MODE
+        value: "false"
