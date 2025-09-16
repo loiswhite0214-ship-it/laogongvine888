@@ -2,8 +2,9 @@ services:
   - type: web
     name: laogongvine888
     env: python
-    plan: free
+    pythonVersion: 3.11.9
     region: frankfurt
+    plan: free
     buildCommand: "pip install --upgrade pip setuptools wheel build && pip install -r requirements.txt"
     startCommand: "cd backend_min && gunicorn -w 2 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:$PORT api_server:app"
     envVars:
