@@ -11,7 +11,7 @@ uvicorn==0.35.0
 
 # data (Py3.12-friendly)
 numpy>=2.2.6
-pandas==2.2.3
+pandas==2.3.3
 python-dateutil==2.9.0.post0
 tqdm==4.67.1
 
