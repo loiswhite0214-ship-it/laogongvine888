@@ -1,0 +1,14 @@
+setuptools>=65.0
+wheel
+build
+flask==3.1.2
+flask-cors==6.0.1
+gunicorn==23.0.0
+uvicorn==0.35.0
+pandas==2.0.3
+numpy==1.24.4
+python-dateutil==2.8.2
+pandas-ta==0.3.14b0
+ccxt==4.4.48
+requests==2.31.0
+tqdm==4.67.1
