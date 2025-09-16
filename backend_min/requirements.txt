@@ -9,17 +9,20 @@ flask-cors==6.0.1
 gunicorn==23.0.0
 uvicorn==0.35.0
 
-# data (Py3.12-friendly)
+# data
 numpy>=2.2.6
-pandas==2.3.3
+pandas==2.3.2
 python-dateutil==2.9.0.post0
 tqdm==4.67.1
 
 # indicators / ta
 pandas-ta==0.4.71b0
+numba==0.61.2
+llvmlite==0.44.0
 
 # market/api
 ccxt==4.5.4
 requests==2.32.5
+
 
 
